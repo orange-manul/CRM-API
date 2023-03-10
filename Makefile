@@ -19,7 +19,7 @@ analyse:
 	./vendor/bin/phpstan analyse
 
 generate:
-	@docker exec $(PROJECT_NAME)_php php artisan ide-helper:models --write
+	@docker exec crm_php php artisan ide-helper:models --write
 
 nginx:
 	@docker exec -it $(PROJECT_NAME)_nginx /bin/sh
